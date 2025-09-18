@@ -4,27 +4,33 @@
     box-sizing: border-box;
 }
 
-h1 {
-    display: block;
-    text-align: center;
-}
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100wh;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .content {
-    width: 500px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .description {
-    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
 }
 
 .house-image {
-    display: inline;
+    width: 100%;
+    height: auto;
 }
